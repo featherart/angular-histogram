@@ -2,23 +2,27 @@
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
-  <title>My AngularJS App</title>
+  <title>Histogram</title>
   <link rel="stylesheet" href="css/app.css"/>
   <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
-</nav>
-
+  <div class="header-cont">
+      <div class="title"><img src="img/acsgraphgrsm.jpg" height=100>ACS Programming Challenge</div>
+  </div>
+  <div class="nav-bar">
+    <ul>
+      <li><a href="#/view1">About</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#/view1">Results</a></li>
+      <li><a href="#">About US</a></li>
+    </ul>
+  </div>
 
 
   <div ng-view></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
+  <div></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
