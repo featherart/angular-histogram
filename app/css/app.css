@@ -1,33 +1,84 @@
 /* app css stylesheet */
-body {
-    margin:0px;
-    background:#000000;
+body 
+{
+  margin:0px;
+  background:#ffffff;
+  height: 100%;
 }
-.title {
-
+.page-wrap 
+{
+  min-height: 100%;
+  /* equal to footer height */
+  /*margin-bottom: -142px;*/ 
 }
-.nav-bar {
+.page-wrap:after 
+{
+  content: "";
+  display: block;
+}
+footer, .page-wrap:after 
+{
+  /* .push must be the same height as footer */
+  height: 30px; 
+  width: 960px;
+}
+footer 
+{
+  background-color: #C0C0C0;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  color: #ffffff;
+  font: Arial;
+  font-size: .6em;
+}
+.node-table 
+{
+  float: center;
+}
+.left 
+{
+  float: left;
+}
+.right 
+{
+  float: right;
+}
+.title 
+{
+  font-family: Open Sans;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #C0C0C0;
+  text-transform: capitalize;
+}
+.nav-bar 
+{
   position: fixed;
   top: 100px;
+  margin-top: 10px;
 }
-.header-cont {
-    width:100%;
-    position:fixed;
-    top:0px;
+.header-cont 
+{
+  width:100%;
+  position:fixed;
+  top:0px;
 }
-.header {
-    height:50px;
-    background:#F0F0F0;
-    border:1px solid #CCC;
-    width:960px;
-    margin:0px auto;
+.header 
+{
+  height:50px;
+  background:#F0F0F0;
+  border:1px solid #CCC;
+  width:960px;
+  margin:0px auto;
 }
-.content {
-    width:960px;
-    background: #F0F0F0;
-    border: 1px solid #CCC;
-    height: 2000px;
-    margin: 70px auto;
+.content 
+{
+  width:960px;
+  background: #F0F0F0;
+  border: 1px solid #CCC;
+  height: 2000px;
+  margin: 70px auto;
 }
 ul
 {
@@ -58,31 +109,37 @@ a:hover,a:active
   color: #FFFFFF;
 }
 
-.menu {
+.menu 
+{
   list-style: none;
   border-bottom: 0.1em solid black;
   margin-bottom: 2em;
   padding: 0 0 0.5em;
 }
 
-.menu:before {
+.menu:before 
+{
   content: "[";
 }
 
-.menu:after {
+.menu:after 
+{
   content: "]";
 }
 
-.menu > li {
+.menu > li 
+{
   display: inline;
 }
 
-.menu > li:before {
+.menu > li:before 
+{
   content: "|";
   padding-right: 0.3em;
 }
 
-.menu > li:nth-child(1):before {
+.menu > li:nth-child(1):before 
+{
   content: "";
   padding: 0;
 }
